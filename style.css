@@ -1,0 +1,486 @@
+:root {
+  --DarkBlue: hsl(233, 26%, 24%);
+  --LimeGreen: hsl(136, 65%, 51%);
+  --BrightCyan: hsl(192, 70%, 51%);
+  --GrayishBlue: hsl(233, 8%, 62%);
+  --LightGrayishBlue: hsl(220, 16%, 96%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--LightGrayishBlue);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--VeryLightGray);
+  z-index: 999;
+}
+
+.header__container {
+  padding: 1.5rem 0 1.5rem 0;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--GrayishBlue);
+  font-size: 1.1rem;
+}
+
+.header__container button {
+  padding: 10px 20px 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to right,
+    var(--LimeGreen),
+    var(--BrightCyan)
+  );
+  color: var(--White);
+  cursor: pointer;
+}
+
+.header__iconos {
+  display: none;
+}
+
+.open {
+  transform: translate(0, 0);
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  background-color: var(--LightGrayishBlue);
+}
+
+.section__hero {
+  display: flex;
+}
+
+/* Estilos Section Hero */
+
+.container__textoHero {
+  width: 50%;
+  position: relative;
+  top: 10rem;
+  color: black;
+}
+
+.container__textoHero h1 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+.container__textoHero p {
+  text-align: start;
+  margin-top: 1.5rem;
+  width: 60%;
+  color: var(--GrayishBlue);
+}
+
+.container__textoHero button {
+  padding: 10px 20px 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to right,
+    var(--LimeGreen),
+    var(--BrightCyan)
+  );
+  color: var(--White);
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+/* Estilar Imagen Hero */
+.container__imgHero {
+  width: 50%;
+  position: relative;
+  top: 0;
+  right: -3.5rem;
+  z-index: 998;
+}
+
+.container__imgManchas {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
+.container__imgMoviles {
+  width: 80%;
+  position: absolute;
+  top: -2rem;
+  right: 0;
+  overflow: hidden;
+  z-index: 998;
+  img {
+    width: 100%;
+    z-index: 998;
+  }
+}
+
+/* Estilos Section Choose */
+.section__choose {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__descriptionChoose h2 {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.container__descriptionChoose p {
+  width: 40%;
+  margin-top: 1rem;
+  color: var(--GrayishBlue);
+}
+
+.cards__choose {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  width: 200px;
+  img {
+    width: 50px;
+  }
+  h3 {
+    margin-top: 0.5rem;
+    font-weight: 500;
+  }
+  p {
+    margin-top: 0.5rem;
+    color: var(--GrayishBlue);
+  }
+}
+
+/* Section Articles */
+.section__articles {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  h1 {
+    font-size: 2.5rem;
+    font-weight: lighter;
+  }
+}
+
+.container__articles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.article {
+  width: 200px;
+  margin-top: 1rem;
+  background-color: var(--White);
+  img {
+    width: 100%;
+  }
+}
+
+.article__texto {
+  padding: 1rem;
+  h6 {
+    color: var(--GrayishBlue);
+  }
+  h4 {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
+  p {
+    margin-top: 0.5rem;
+    color: var(--GrayishBlue);
+  }
+}
+
+/* Footer */
+footer {
+  background-color: var(--DarkBlue);
+  a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.container__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer__logo h2 {
+  color: white;
+}
+
+.footer__iconos {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  img {
+    cursor: pointer;
+  }
+}
+
+.footer__enlaces {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+.footer__btn p {
+  color: white;
+  margin-top: 1rem;
+}
+
+.footer__btn button {
+  padding: 10px 20px 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to right,
+    var(--LimeGreen),
+    var(--BrightCyan)
+  );
+  color: var(--White);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 990px) {
+  .container__imgHero {
+    width: 60%;
+    position: relative;
+    top: 4rem;
+    right: -4rem;
+    z-index: 998;
+  }
+  .container__textoHero {
+    width: 40%;
+    position: relative;
+    top: 10rem;
+    color: black;
+  }
+  .section__choose {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .section__choose {
+    margin-top: 6rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .container__imgHero {
+    width: 60%;
+    position: relative;
+    top: 2rem;
+    right: -3rem;
+    z-index: 998;
+  }
+  .container__textoHero {
+    width: 40%;
+    position: relative;
+    top: 10rem;
+    color: black;
+  }
+  .section__choose {
+    margin-top: 11rem;
+  }
+  .article {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .header__container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .section__hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container__imgHero {
+    width: 100%;
+    position: relative;
+    top: 0rem;
+    right: 0rem;
+    order: 1;
+    z-index: 998;
+  }
+  .container__imgMoviles {
+    width: 100%;
+  }
+  .container__textoHero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    top: 9rem;
+    color: black;
+    margin-top: 4rem;
+    order: 2;
+  }
+  .section__choose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container__descriptionChoose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+      width: 100%;
+    }
+  }
+  .card {
+    margin-top: 1.5rem;
+  }
+  .section__articles h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  ul {
+    position: absolute;
+    width: 250px;
+    display: flex;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+    top: 4.5rem;
+    right: 2rem;
+    flex-direction: column;
+    background-color: var(--LightGrayishBlue);
+    color: black;
+    transform: translateX(-450%);
+    border-radius: 10px;
+  }
+  .header__container button {
+    display: none;
+  }
+  .header__iconos {
+    display: block;
+  }
+  .header__iconos .icon__close {
+    display: none;
+  }
+  .container__textoHero {
+    margin-top: 3rem;
+  }
+
+  .container__articles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container__footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__logo h2 {
+    text-align: center;
+  }
+  .footer__enlaces {
+    margin-top: 1rem;
+    align-items: center;
+  }
+  .footer__btn {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .container__textoHero {
+    margin-top: 0rem;
+  }
+  .container__textoHero p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .cards__choose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  ul {
+    position: absolute;
+    width: 300px;
+    display: flex;
+    top: 4.5rem;
+    flex-direction: column;
+    background-color: var(--LightGrayishBlue);
+    color: black;
+    transform: translateX(-450%);
+  }
+  .header__container button {
+    display: none;
+  }
+  .header__iconos {
+    display: block;
+  }
+  .header__iconos .icon__close {
+    display: none;
+  }
+  .container__textoHero {
+    margin-top: -3.5rem;
+  }
+}
